@@ -53,3 +53,7 @@ def categorize():
     os.remove("animal.jpg")
       
     return jsonify({'result': prediction})
+    
+@app.route('/test', methods=['GET'])
+def test():
+    return "1"
