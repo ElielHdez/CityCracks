@@ -1,13 +1,3 @@
-#import sys
-#sys.setdefaultencoding('utf-8')
-
-#import os
-#os.putenv('LANG', 'en_US.UTF-8')
-#os.putenv('LC_ALL', 'en_US.UTF-8')
-
-if __name__ == '__main__':
-    app.run(port=4567,host='0.0.0.0',ssl_context='adhoc')
-
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import urllib.request
