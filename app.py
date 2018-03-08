@@ -10,7 +10,7 @@ app= Flask(__name__)
 CORS(app)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', ssl_context='adhoc')
 
 # 64 x 64 because thats the size of the inputs
 test_image = image.load_img('cat_or_dog_1.jpg', target_size = (64, 64))
